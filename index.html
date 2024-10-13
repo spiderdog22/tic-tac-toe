@@ -4,9 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+    <div class="container">
+        <div class="title">Tic-Tac-Toe</div>
+        <div id="board">
+        </div>
+        <div id="round-status"></div>
+        <div id="status">
+            <div><span id="player-a"></span><span id="a-points"></span></div>
+            <div><span id="player-b"></span><span id="b-points"></span></div>
+        </div>
+        <div id="control">
+            <button id="start-reset">Start/Reset</button>
+            <form id="name-form">
+                <input type="text" name="aName" id="aName" maxlength="10" required>
+                <input type="text" name="bName" id="bName" maxlength="10" required>
+                <button type="submit" name="submit">Set names</button>
+            </form>
+        </div>
+    </div>
     
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>
